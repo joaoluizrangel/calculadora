@@ -1,0 +1,65 @@
+package exe2;
+
+public class Exe2 {
+	//variaveis
+	double Numero1;
+	double Numero2;
+	double Resultado;
+	
+	//conta soma
+	void Valor(){
+		Resultado = Numero1+Numero2;
+	}
+	//conta subtração
+	void Valor1(){
+		Resultado = Numero1-Numero2;
+	}
+	//conta multiplicação
+	void Valor2(){
+		Resultado = Numero1*Numero2;
+	}
+	//conta divisão
+	void Valor3(){
+		Resultado = Numero1/Numero2;
+	}
+}
+
+
+--------------------------------------------------------------
+
+package exe2;
+
+import java.util.*;
+
+public class ExePP2 {
+	public static void main (String [] args){
+		Scanner in = new Scanner(System.in);
+		
+		//apresentando variaveis
+		double Numero1, Numero2, Resultado;	
+		
+		Exe2 Calculo = new Exe2(); //instanciando
+		
+		//pedindo valores
+		System.out.println("Digite o Valor 1");
+		Calculo.Numero1= in.nextDouble();
+		System.out.println("Digite o Valor 2");
+		Calculo.Numero2 = in.nextDouble();
+		
+		Calculo.Valor(); //calculando valor
+		
+		//apresentando Resultados
+		System.out.println("Resultado Soma: " +Calculo.Resultado);
+		Calculo.Valor1();
+		
+		System.out.println("Resultado Subtração: " +Calculo.Resultado);
+		Calculo.Valor2();
+		
+		System.out.println("Resultado Multiplicação: " +Calculo.Resultado);
+		Calculo.Valor3();
+		
+		System.out.println("Resultado Divisão: " +Calculo.Resultado);
+	}
+}
+
+----------------------------------------------------------------------------------------------
